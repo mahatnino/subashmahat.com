@@ -244,7 +244,7 @@
     
     // Example usage: Change favicon dynamically
     // Worker js deployment testing
-    changeFavicon("favicon.ico");
+    changeFavicon("https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon.ico?token=GHSAT0AAAAAAC65IZEM7WXCH3IIZYBYDKUUZ5OKVUA");
     
 
 
