@@ -241,12 +241,7 @@
         }
         link.href = url;
     }
-    
-    // Example usage: Change favicon dynamically
-    // Worker js deployment testing
     changeFavicon("https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon.ico?token=GHSAT0AAAAAAC65IZEM7WXCH3IIZYBYDKUUZ5OKVUA");
-    
-
 
       function addDarkModeButton(device) {
         const nav = device === 'web' ? document.querySelector('.notion-topbar').firstChild : document.querySelector('.notion-topbar-mobile');
