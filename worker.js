@@ -189,6 +189,20 @@
       element.append(`<div style="display:none">Powered by <a href="http://fruitionsite.com">Fruition</a></div>
       <script>
       window.CONFIG.domainBaseUrl = 'https://${MY_DOMAIN}';
+       function changeFavicon(url) {
+        let link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement("link");
+            link.rel = "icon";
+            link.type = "image/x-icon";
+            document.head.appendChild(link);
+        }
+        link.href = url;
+    }
+         window.addEventListener('DOMContentLoaded', () => {
+            changeFavicon("https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon1.ico");
+        });
+
       const SLUG_TO_PAGE = ${JSON.stringify(this.SLUG_TO_PAGE)};
       const PAGE_TO_SLUG = {};
       const slugs = [];
@@ -231,17 +245,7 @@
         }
       }
 
-      function changeFavicon(url) {
-        let link = document.querySelector("link[rel~='icon']");
-        if (!link) {
-            link = document.createElement("link");
-            link.rel = "icon";
-            link.type = "image/x-icon";
-            document.head.appendChild(link);
-        }
-        link.href = url;
-    }
-    changeFavicon("https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon1.ico");
+     
 
       function addDarkModeButton(device) {
         const nav = device === 'web' ? document.querySelector('.notion-topbar').firstChild : document.querySelector('.notion-topbar-mobile');
