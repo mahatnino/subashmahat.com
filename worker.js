@@ -203,14 +203,14 @@
             changeFavicon("https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon1.ico");
         });
 
-         const observer = new MutationObserver(() => {
+         const observer1 = new MutationObserver(() => {
             const favicon = document.querySelector("link[rel~='icon']");
             if (favicon && favicon.href !== "https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon1.ico") {
                 changeFavicon("https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon1.ico");
             }
         });
 
-        observer.observe(document.head, { childList: true, subtree: true });
+        observer1.observe(document.head, { childList: true, subtree: true });
 
       const SLUG_TO_PAGE = ${JSON.stringify(this.SLUG_TO_PAGE)};
       const PAGE_TO_SLUG = {};
