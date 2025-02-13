@@ -243,6 +243,7 @@
     }
     
     // Example usage: Change favicon dynamically
+    // Worker js deployment testing
     changeFavicon("favicon.ico");
     
 
