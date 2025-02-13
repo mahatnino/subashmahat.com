@@ -241,7 +241,7 @@
         }
         link.href = url;
     }
-    changeFavicon("https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon.ico?token=GHSAT0AAAAAAC65IZEM7WXCH3IIZYBYDKUUZ5OKVUA");
+    changeFavicon("https://raw.githubusercontent.com/mahatnino/subashmahat.com/refs/heads/main/favicon.ico?token=GHSAT0AAAAAAC65IZEMAKUETQVZPRVH375UZ5OMAFQ");
 
       function addDarkModeButton(device) {
         const nav = device === 'web' ? document.querySelector('.notion-topbar').firstChild : document.querySelector('.notion-topbar-mobile');
